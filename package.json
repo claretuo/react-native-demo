@@ -1,0 +1,41 @@
+{
+	"name": "MyApp",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"start": "node node_modules/react-native/local-cli/cli.js start",
+		"test": "jest",
+		"tsc": "tsc",
+		"ios": "react-native run-ios && tsc -w",
+		"android": "react-native run-android && tsc -w",
+		"clean": "rm -rf build && rimraf artifacts",
+		"build": "npm run clean && npm run tsc --",
+		"lint": "tslint src/**/*.ts"
+	},
+	"dependencies": {
+		"path": "^0.12.7",
+		"react": "15.4.2",
+		"react-native": "0.42.3",
+		"react-native-speech-to-text-ios": "^1.0.4",
+		"react-native-tts": "^1.4.0",
+		"react-navigation": "^1.0.0-beta.11",
+		"react-redux": "^5.0.6",
+		"redux": "^3.7.2"
+	},
+	"devDependencies": {
+		"@types/react": "^16.0.5",
+		"@types/react-native": "^0.48.4",
+		"babel-jest": "21.0.2",
+		"babel-preset-react-native": "3.0.2",
+		"concurrently": "^3.5.0",
+		"jest": "21.0.2",
+		"react-test-renderer": "15.4.2",
+		"rimraf": "^2.6.2",
+		"tslint": "^5.7.0",
+		"typescript": "^2.5.2",
+		"typings": "^2.1.1"
+	},
+	"jest": {
+		"preset": "react-native"
+	}
+}
