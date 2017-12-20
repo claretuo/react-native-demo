@@ -31,8 +31,8 @@ export default class Menu extends React.Component<Props, State> {
       <View style={styles.container}>
         <View style={styles.scrollContainer}>
           <ScrollView overScrollMode='auto'>
-            <View>
-              <Text>播放器</Text>
+            <View style={styles.titleBox}>
+              <Text style={styles.titleTxt}>播放器</Text>
             </View>
           </ScrollView>
         </View>
